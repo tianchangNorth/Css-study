@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no "
+    />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #0d1226;
+      }
+      .bg1 {
+        position: absolute;
+        bottom: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 569px;
+        background: url(../images/bg2.png) repeat-x;
+        animation: move 35s linear infinite forwards;
+      }
+      .bg2 {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 336px;
+        background: url(../images/bg1.png) repeat-x;
+        animation: move 30s linear infinite forwards;
+      }
+
+      @keyframes move {
+        0% {
+          background-position: 0px;
+        }
+        100% {
+          background-position: -3840px;
+        }
+      }
+      @keyframes bear {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: -1600px 0;
+        }
+      }
+      @keyframes bearmove {
+        0% {
+          left: 0px;
+        }
+        100% {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      .bear {
+        position: absolute;
+        top: 200px;
+        left: 0px;
+        width: 200px;
+        height: 100px;
+        background: url(../images/bear.png);
+        animation: bear 1s steps(8) infinite, bearmove 10s linear forwards;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg1">
+      <div class="bg2">
+        <div class="bear"></div>
+      </div>
+    </div>
+  </body>
+</html>

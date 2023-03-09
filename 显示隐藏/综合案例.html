@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .box {
+        position: relative;
+        width: 448px;
+        height: 252px;
+        /* background-image: url(D:/html/vscode/image/tudou.jpg); */
+        margin: 100px auto;
+      }
+      .hidd {
+        position: absolute;
+        width: 448px;
+        height: 252px;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: none;
+      }
+      .open {
+        position: absolute;
+        top: 50%;
+        margin-top: -17px;
+        left: 50%;
+        margin-left: -17px;
+      }
+      .box:hover .hidd {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <a href="#">
+        <div class="hidd">
+          <div class="open">
+            <img src="D:/html/vscode/image/arr.png" alt="" />
+          </div></div
+      ></a>
+      <img src="D:/html/vscode/image/tudou.jpg" />
+    </div>
+  </body>
+</html>

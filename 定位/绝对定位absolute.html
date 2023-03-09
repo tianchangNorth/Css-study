@@ -1,0 +1,33 @@
+<!-- 绝对定位的特点：（务必记住)
+1.如果没有祖先元素或者祖先元素没有定位，则以浏览器为准定位(Document]文档)。
+2.如果祖先元素有定位（相对、绝对、固定定位），则以最近一级的有定位祖先元素为参考点移动位置。
+3.绝对定位不再占有原先的位置。（脱标） -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>绝对定位</title>
+    <style>
+      .banxin {
+        width: 800px;
+        height: 1400px;
+        background-color: blue;
+        margin: 0px auto;
+      }
+      .fixed {
+        position: fixed;
+        left: 50%;
+        margin-left: 400px;
+        width: 50px;
+        height: 100px;
+        background-color: cadetblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fixed"></div>
+    <div class="banxin"></div>
+  </body>
+</html>

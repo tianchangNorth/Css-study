@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+    font-weight: 400;
+}
+body {
+    text-align: left;
+    font: 16px/28px 'Microsoft yahei';
+}
+h3 {
+    text-align: left;
+}
+
+p {
+    text-indent: 2em;
+}
+.gray {
+    color: #888888;
+    text-align: center;
+    font-size: 12px;
+}
+a  {
+    text-decoration: none;
+    }
+.serch{
+    color: #666666;
+    font-size: 12px;
+}
+button{
+    font-size: 12px ;
+}

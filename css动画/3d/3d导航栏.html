@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        perspective: 500px;
+      }
+      .box {
+        transform-style: preserve-3d;
+        position: relative;
+        width: 100px;
+        height: 25px;
+        margin: 100px auto;
+        transform: rotateY(90deg);
+        transition: all 4s;
+      }
+      .son2 {
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        background-color: red;
+        transform: rotateX(70deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="son1"></div>
+      <div class="son2"></div>
+    </div>
+  </body>
+</html>

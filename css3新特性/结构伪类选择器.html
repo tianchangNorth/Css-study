@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 选择ul里的第一个li子元素 */
+      ul li:first-child {
+        background-color: pink;
+      }
+      /* 选择ul里的最后一个li子元素 */
+      ul li:last-child {
+        background-color: pink;
+      }
+      /* 选择ul里的第5个li子元素 */
+      ul li:nth-child(5) {
+        background-color: blue;
+      }
+      /* 把所有偶数子类选出 */
+      ul li:nth-child(even) {
+        background-color: chartreuse;
+      }
+      /* 把所有奇数子类选择出来 */
+      ul li:nth-child(odd) {
+        background-color: aqua;
+      }
+      ul li:nth-child(2n + 1) {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>一</li>
+      <li>二</li>
+      <li>三</li>
+      <li>四</li>
+      <li>五</li>
+      <li>六</li>
+      <li>七</li>
+      <li>八</li>
+    </ul>
+  </body>
+</html>

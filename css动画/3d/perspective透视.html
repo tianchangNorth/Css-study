@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 在2D平面产生近大远小视觉立体，但是只是效果二维的
+    如果想要在网页产生3D效果需要透视（理解成3D物体投影在2D平面内）。
+    模拟人类的视觉位置，可认为安排只眼睛去看
+    透视我们也称为视距：视距就是人的眼睛到屏幕的距离
+    距离视觉，点越近的在电脑平面成像越大，越远成像越小
+    透视的单位是像素 -->
+    <style>
+      body {
+        perspective: 201px;
+      }
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        margin: 200px auto;
+        transform: translate3d(0px, 0px, 200px);
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

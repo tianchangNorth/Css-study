@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>浮动的特性</title>
+    <!-- 1.5浮动特性（重难点)
+    加了浮动之后的元素，会具有很多特性，需要我们掌握的.
+    
+    1.浮动元素会脱离标准流（脱标）
+    设置了浮动(float)的元素最重要特性：
+    1.脱离标准普通流的控制（浮）移动到指定位置（动），（俗称脱标）
+    2.浮动的盒子不再保留原先的位置
+    
+    2.浮动的元素会一行内显示并且元素顶部对齐
+    3.浮动的元素会具有行内块元素的特性 -->
+    <style>
+      .box {
+        height: 100px;
+        width: 300px;
+        background-color: black;
+        margin: 0px auto;
+      }
+      .left {
+        /* float: left; */
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        float: left;
+      }
+      .right {
+        width: 200px;
+        height: 100px;
+        background-color: burlywood;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="left">左侧盒子</div>
+      <div class="right">右侧盒子</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 区别：
+    1.nth-child对父元素里面所有孩子排序选择（序号是固定的）先找到第个孩子，然后看是否和E匹配
+    2.nth-of-type对父元素里面指定子元素进行排序选择。先去匹配E,然后再根据E找第n个孩子 -->
+    <style>
+      section div:nth-of-type(1) {
+        background-color: blue;
+      }
+      section div:nth-child(1) {
+        background-color: chartreuse;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p>光头强</p>
+      <div>熊大</div>
+      <div>熊二</div>
+    </section>
+  </body>
+</html>

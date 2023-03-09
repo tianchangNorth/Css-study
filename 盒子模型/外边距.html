@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>外边距</title>
+    <!-- 边框塌陷解决方案
+    可以为父元素定义上边框。
+    可以为父元素定义上内边距。
+    可以为父元素添加overflow:hidden。 -->
+    <style>
+      div {
+        width: 1100px;
+        height: 200px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: red;
+      }
+      span {
+        display: inline-block;
+        width: 200px;
+        height: 180px;
+        background-color: beige;
+        margin: 10px;
+      }
+      .father {
+        width: 500px;
+        height: 500px;
+        background-color: aqua;
+        overflow: hidden;
+        margin-top: 100px;
+      }
+      .son {
+        width: 100px;
+        height: 100px;
+        margin-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="father"><div class="son"></div></div>
+  </body>
+</html>

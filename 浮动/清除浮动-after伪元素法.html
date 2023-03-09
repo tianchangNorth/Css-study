@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>after伪元素法</title>
+    <style>
+      .box {
+        width: 800px;
+        background-color: aquamarine;
+      }
+      .clearfix:after {
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+      }
+      .clearfix {
+        *zoom: 1;
+      }
+      .box2 {
+        width: 800px;
+        height: 100px;
+        background-color: black;
+      }
+      .mod1 {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        float: left;
+      }
+      .mod2 {
+        width: 200px;
+        height: 200px;
+        background-color: burlywood;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box clearfix">
+      <div class="mod1"></div>
+      <div class="mod2"></div>
+    </div>
+    <div class="box2"></div>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>基础选择器</title>
+    <!-- 标签选择器:以标签名称作为选择器 -->
+    <style>
+      p {
+        color: red;
+        font-size: 50px;
+      }
+      div {
+        color: black;
+        font-size: 100px;
+      }
+      /* 类选择器 可以单独选择一个或者某几个标签 */
+      .book1 {
+        color: blueviolet;
+        font-size: 50px;
+      }
+      .book2 {
+        color: black;
+        font-size: 25px;
+      }
+      .red {
+        background: red;
+        width: 200px;
+        height: 100px;
+      }
+      .green {
+        background: green;
+        width: 200px;
+        height: 100px;
+        /* 多类名样式 */
+      }
+      .pink {
+        color: pink;
+      }
+      .font35px {
+        font-size: 100px;
+      }
+      /* id选择器 */
+      /* 样式#定义，结构id调用，只能调用一次  */
+      #pink {
+        color: pink;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>男</p>
+    <p>男</p>
+    <div>女</div>
+    <div>女</div>
+    <ul class="book1">
+      <li>知北游</li>
+      <li>道诡异仙</li>
+      <li>悟空传</li>
+      <li>大圣传</li>
+    </ul>
+    <ul class="book2">
+      <li>知北游</li>
+      <li>道诡异仙</li>
+      <li>悟空传</li>
+      <li>大圣传</li>
+    </ul>
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="red"></div>
+    <div class="pink font35px">刘德华</div>
+    <div id="pink">粉红</div>
+  </body>
+</html>

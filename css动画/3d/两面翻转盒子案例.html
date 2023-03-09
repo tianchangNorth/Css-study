@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        /* perspective: 500px; */
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 200px auto;
+        transition: all 1s;
+        transform-style: preserve-3d;
+      }
+      .font {
+        background-color: cadetblue;
+        transform: translateZ(10px);
+      }
+      .back {
+        background-color: skyblue;
+        transform: rotateY(180deg);
+      }
+      .font,
+      .back {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 200px;
+        height: 200px;
+        color: blue;
+        font-size: 20px;
+        text-align: center;
+        line-height: 200px;
+        border-radius: 50%;
+      }
+      .box:hover {
+        transform: rotateY(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="font">天王盖地虎</div>
+      <div class="back">宝塔镇河妖</div>
+    </div>
+  </body>
+</html>

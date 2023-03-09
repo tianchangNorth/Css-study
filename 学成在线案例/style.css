@@ -1,0 +1,331 @@
+/* 建议遵循以下顺序：
+1.布局定位属性：display/position./float/clear/visibility/overflow(建议display第一个写，毕竟关系到模式)】
+2.自身属性：width/height/margin/padding/border/background
+3.文本属性：color/font/text-decoration/text-align./vertical-align/white-space/break-word
+4.其他属性(CSS3 )content cursor border-radius/box-shadow text-shadow/background:linear-gradient... */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #f3f5f7;
+}
+li{
+    list-style: none;
+}
+/* a{
+    text-decoration:none ;
+} */
+.w{
+    width: 1200px;
+    margin: auto;
+}
+.header{
+    height: 42px;
+    margin: 30px auto;
+}
+.logo{
+    width: 198px;
+    height: 42px;
+    float: left;
+}
+.nav{
+    float: left;
+    margin-left: 70px;
+}
+.nav ul li{
+    float: left;
+    margin: 0px 15px;
+}
+.nav ul li a{
+    display: block;
+    height: 42px;
+
+    line-height: 42px;
+    font-size: 18px;
+    color: #050505;
+    text-decoration: none;
+}
+.nav ul li a:hover{
+    border-bottom: solid 2px #00a4ff;
+    color: #00a4ff;
+}
+.search {
+    width: 412px;
+    height: 42px;
+    float: left;
+    margin-left: 95px;
+}
+.search input{
+    width: 345px;
+    height: 40px;
+    border: solid 1px #00a4ff;
+    border-right: 0;
+    /* 去黑色边框 */
+    outline: #00a4ff;
+    font-size: 14px;
+    color: #bfbfbf;
+    padding-left:15px;
+    float: left;
+}
+.search input:hover{
+    border: solid 1px #00a4ff;
+}
+.search button{
+    height: 42px;
+    width: 50px;
+    float: left;
+    background-image: url(image/fa-search.png);
+    border: 0;  
+}
+/* 用户模块 */
+.user{
+    line-height: 42px;
+    float: right;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #666666;
+}
+.user img{
+    vertical-align: middle;
+}
+/* banner区域 */
+.bannner{
+    height: 420px;
+    background-color: #1c036c;
+}
+.bannner .w{
+    height: 420px;
+    background: url(image/banner2.png) no-repeat top center;
+}
+.bannner .w .subnav{
+    height: 420px;
+    width: 190px;
+    background:rgba(0, 0, 0, .3);
+    float: left;
+}
+.bannner .subnav ul li a{
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+.bannner .subnav ul li{
+    line-height: 45px;
+    height: 45px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.subnav ul li a span{
+    float: right;
+}
+.subnav ul li a:hover{
+    color: #00b4ff;
+}
+.bannner .course{
+    width: 230px;
+    height: 300px;
+    background-color: #ffffff;
+    float: right;
+    margin-top: 50px;
+}
+.course h2{
+    display: block;
+    height: 48px;
+    width: 230px;
+    background-color: #9bceea;
+    font-size: 18px;
+    color: white;
+    line-height: 48px;
+    text-align: center;
+
+}
+/* .bannner .course{
+    position: fixed;
+    top: 100px;
+    right: 360px;
+} */
+.bd {
+    padding: 0px 20px;
+}
+.bd ul li {
+    padding: 15px 0px;
+    border-bottom: solid 1px #efefef ;
+}
+.bd ul li  h4{
+    font-size: 16px;
+    color: #4e4e4e;
+}
+.bd ul li p{
+    font-size: 12px;
+    color: #a5a5a5;
+}
+.bd .more{
+    display: block;
+    border: 1px solid #22b0ff;
+    height: 38px;
+    text-decoration: none;
+    line-height: 38px;
+    text-align: center;
+    font-weight: 700;
+    color: #22b0ff;
+}
+/* goods模块 */
+.goods{
+    height: 60px;
+    background-color: #fff;
+    margin-top: 8px;
+    box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, .1);
+}
+.goods h3{
+    float: left;
+    margin-left: 30px;
+    line-height: 60px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+.goods .goods-item {
+    float: left;
+    margin-left: 35px;
+}
+.goods .goods-item  li{
+    float: left;
+}
+.goods-item  li a{
+    text-decoration: none;
+    padding: 0px 30px;
+    color: #050505;
+    border-left: #bfbfbf 1px solid;
+    line-height: 60px;
+}
+.goods .mod{
+    float: right;
+    margin-right: 20px;
+    color: #00a4ff;
+    font-size: 14px;
+    line-height: 60px;
+    text-decoration: none;
+}
+/* box核心内容区域 */
+
+.box{
+    margin-top: 30px;
+    
+}
+.box-bd ul li em {
+    position: absolute;
+    top: 5px;
+    right: -4px;
+} 
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  .clearfix {
+    *zoom: 1;
+  }
+.box-hd{
+    height: 45px;
+}
+.box-hd h2{
+    float: left;
+    font-size: 20px;
+    font-weight: 400;
+    color: #494949;
+}
+.box-hd a{
+    float: right;
+    margin-right: 30px;
+    font-size: 12px;
+    color: #c6c7c8;
+    text-decoration: none;
+}
+.box .box-bd ul li{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+    position: relative;
+
+}
+.box .box-bd ul li:hover{
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .1);
+}
+.box .box-bd ul .last{
+    margin-right: 0px;
+}
+.box-bd ul li a img{
+    width: 100%;
+}
+.box-bd ul li a {
+    text-decoration: none;
+}
+.box-bd ul li a h5{
+    font-size: 14px;
+    margin: 25px 20px 20px 25px;
+    color: #050505;
+    font-weight: 400;
+}
+.box-bd ul li a .info{
+    font-size: 12px;
+    color: #c6c6c6;
+    margin: 0px 20px 0px 25px;
+}
+.box-bd ul li a .info span
+{
+    color: #ff7c2d;
+}
+/* footer开始 */
+.footer{
+    height: 415px;
+    background-color: #fff;
+}
+.footer .w{
+
+    height: 415px;
+}
+.footer .copyright{
+    float: left;
+}
+.footer .copyright img{
+    display: block;
+    margin: 30px 0px 25px 25px;
+}
+.footer .copyright p{
+    margin: 0px 0px 15px 25px;
+    color:#666666;
+    font-size: 12px;
+}
+.footer .copyright button{
+    height: 35px;
+    width: 120px;
+    border: #00a4ff 1px solid; 
+    background-color: #ffffff;
+    margin-left: 25px;
+
+}
+.footer .links{
+    float: right;
+    margin-top: 30px;
+}
+.footer .links dl{
+    float: right;
+    margin-left: 120px;
+}
+.footer .links dl dt{
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 10px;
+
+}
+.footer .links dl dd a{
+    font-size: 12px;
+    color: #333333;
+    text-decoration: none;
+}
+
+/* 实际开发中，我们不会直接用链接ā而是用Ii包含链接(i+a)的做法。 */

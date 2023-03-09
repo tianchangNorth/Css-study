@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- linear
+    动画从头到尾的速度是相同的。匀速
+    ease
+    默认。动画以低速开始，然后加快，在结束前变慢。
+    ease-in
+    动画以低速开始。
+    ease-out
+    动画以低速结束。
+    ease-in-out
+    动画以低速开始和结束。
+    steps0
+    指定了时间函数中的间隔数量（步长） -->
+    <style>
+      div {
+        width: 20px;
+        height: 20px;
+        background-color: blue;
+        font-size: 18px;
+        line-height: 20px;
+        overflow: hidden;
+      }
+      div:hover {
+        animation: move 10s steps(10);
+      }
+      @keyframes move {
+        0% {
+          width: 20px;
+        }
+        100% {
+          width: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>动画从头到尾的速度是相同的匀速</div>
+  </body>
+</html>

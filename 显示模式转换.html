@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a {
+        width: 200px;
+        height: 200px;
+        display: block; /* 行内元素转换为块元素 */
+        text-decoration: none;
+      }
+      a:hover {
+        color: blue;
+      }
+      div {
+        background-color: purple;
+        display: inline; /*块元素转化为行内元素*/
+      }
+      span {
+        width: 300px;
+        height: 100px;
+        background-color: skyblue;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">一片春愁待酒浇。</a>
+    <a href="#">一片春愁待酒浇。</a>
+    <div>行内元素</div>
+    <div>行内元素</div>
+    <br />
+    <span>行内元素转化为行内块元素</span>
+    <span>行内元素转化为行内块元素</span>
+  </body>
+</html>
